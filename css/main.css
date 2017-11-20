@@ -1,3 +1,103 @@
-/*
- * Estilos de tu proyecto
- */
+#header {
+  background-image: url("..\assets\images\hero.gif");
+}
+
+#header > header > img {
+  width: 5%;
+  float: left;
+  margin-left: 100px;
+}
+
+#header > header > h6 {
+  display: inline-block;
+  float: left;
+  margin-left: 200px;
+}
+
+#ride {
+  background-color: #622484;
+  color: white;
+  height: 450px;
+}
+
+#ride > div > img {
+  width: 30%;
+  float: right;
+  margin-right: 200px;
+  margin-top: 20px;
+}
+
+#ride > div {
+  margin: 0px 0px 30px 100px;
+  padding-top: 30px;
+}
+
+#ride > div > h1 {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+#ride > div > p {
+  font-size: 10px;
+  line-height: 5px;
+}
+
+#ride > div > h1 + h1 {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+#video1 {
+  background-color: white;
+  float: left;
+  margin-left: 50px;
+
+}
+
+#video1 > h6 {
+  font-size: 10px;
+  padding: 0 auto;
+}
+
+#video1 > p {
+  line-height: 8px;
+  font-size: 12px;
+  padding: 0 auto;
+}
+
+#video1 > div {
+  margin-left: 450px;
+  float: left;
+  margin-top: 0px;
+
+}
+
+#video1 {
+
+}
+
+.button {
+  border-radius: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.contenedor {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.style-form {
+  margin-left: 1000px;
+  background-color: white;
+}
+
+.style-form > .title {
+  color: purple;
+}
