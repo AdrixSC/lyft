@@ -47,33 +47,89 @@
   margin: 0 auto;
 }
 
-#video1 {
+#video-left {
   background-color: white;
   float: left;
   margin-left: 50px;
-
 }
 
-#video1 > h6 {
+#video-left > h6 {
   font-size: 10px;
   padding: 0 auto;
 }
 
-#video1 > p {
+#video-left > p {
   line-height: 8px;
   font-size: 12px;
   padding: 0 auto;
 }
 
-#video1 > div {
-  margin-left: 450px;
-  float: left;
+#video-left + div {
+  margin-left: 170px;
+  float: right;
   margin-top: 0px;
+}
+
+#video-right {
+  background-color: white;
+  float: right;
+  margin-right: 50px;
+  margin-top: 0px;
+}
+
+
+#footer {
+  background-color: #333447;
+  color: white;
+  display: inline-block;
+  height: 500px;
 
 }
 
-#video1 {
+#footer > div {
+  float: left;
+  width: 20%;
+  margin-left: 60px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+#footer > div > h1 {
+  font-size: 15px;
+}
+
+#footer > div > p {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+#footer > div > p:hover {
+  color: purple;
+  cursor: pointer;
+}
+
+#footer > div > p > img {
+  width: 40%;
+  padding: 0px;
+}
+
+#social {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+
+}
+
+#social > hr {
+  color: white;
+  text-align: center;
+  width: 800px;
+
+
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .button {
@@ -92,6 +148,7 @@
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+
 
 .style-form {
   margin-left: 1000px;
