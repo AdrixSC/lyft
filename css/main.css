@@ -1,17 +1,65 @@
-#header {
-  background-image: url("..\assets\images\hero.gif");
+body {
+  margin: 0 auto;
+}
+
+input {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 15px;
+  margin: 0 auto;
+  outline:0px;
+  width: 200px;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  background: magenta;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: left;
+}
+
+#header  { /*colapso!!!!! La imagen se parte en 4... no sé qué pasa*/
+  background-image: url("../assets/images/hero.gif");
+  margin: 0px;
+  width: 100%;
 }
 
 #header > header > img {
-  width: 5%;
   float: left;
   margin-left: 100px;
+  width: 5%;
 }
 
 #header > header > h6 {
+  color: white;
   display: inline-block;
   float: left;
   margin-left: 200px;
+  padding: 0 auto;
+
+}
+
+#header > header > h6:hover { /*aplicando hover para que cambie de apariencia al pasar el cursor*/
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+#header > header > form > .title {
+  line-height: 10px;
+}
+
+#header > header > form > p {
+  font-size: 10px;
+}
+
+#header > header > form > .boton {
+  display: inline-block; /*quiero pasar la etiqueta h6 junto al botón y no se puede aún*/
 }
 
 #ride {
@@ -21,10 +69,10 @@
 }
 
 #ride > div > img {
-  width: 30%;
   float: right;
   margin-right: 200px;
   margin-top: 20px;
+  width: 30%;
 }
 
 #ride > div {
@@ -43,8 +91,8 @@
 }
 
 #ride > div > h1 + h1 {
-  padding: 0 auto;
   margin: 0 auto;
+  padding: 0 auto;
 }
 
 #video-left {
@@ -59,14 +107,14 @@
 }
 
 #video-left > p {
-  line-height: 8px;
   font-size: 12px;
+  line-height: 8px;
   padding: 0 auto;
 }
 
 #video-left + div {
-  margin-left: 170px;
   float: right;
+  margin-left: 170px;
   margin-top: 0px;
 }
 
@@ -83,15 +131,14 @@
   color: white;
   display: inline-block;
   height: 500px;
-
 }
 
 #footer > div {
+  box-sizing: border-box;
   float: left;
-  width: 20%;
   margin-left: 60px;
   padding: 20px;
-  box-sizing: border-box;
+  width: 20%;
 }
 
 #footer > div > h1 {
@@ -109,23 +156,20 @@
 }
 
 #footer > div > p > img {
-  width: 40%;
   padding: 0px;
+  width: 40%;
 }
 
 #social {
   color: white;
-  text-align: center;
   padding-top: 200px;
-
+  text-align: center;
 }
 
 #social > hr {
   color: white;
   text-align: center;
   width: 800px;
-
-
 }
 
 .wrapper {
@@ -140,9 +184,9 @@
   clear: both;
 }
 
-.contenedor {
-  max-width: 1300px;
+.contenedor { /*definiendo el ancho de mi página*/
   margin: 0 auto;
+  max-width: 1300px;
 }
 
 .font-montserrat {
@@ -151,8 +195,10 @@
 
 
 .style-form {
-  margin-left: 1000px;
   background-color: white;
+  margin-left: 810px;
+  padding: 40px;
+  width: 450px;
 }
 
 .style-form > .title {
