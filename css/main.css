@@ -23,31 +23,43 @@ button {
   text-align: left;
 }
 
-#header  { /*colapso!!!!! La imagen se parte en 4... no sé qué pasa*/
+
+#header  {
   background-image: url("../assets/images/hero.gif");
   margin: 0px;
   width: 100%;
+  background-size: 75%;
 }
 
 #header > header > img {
   float: left;
   margin-left: 100px;
+  margin-top: 25px;
   width: 5%;
 }
 
-#header > header > h6 {
+#header > header > div {
   color: white;
-  display: inline-block;
-  float: left;
-  margin-left: 200px;
-  padding: 0 auto;
-
+  float: right;
+  width: 40%;
 }
 
-#header > header > h6:hover { /*aplicando hover para que cambie de apariencia al pasar el cursor*/
+#header > header > div > h6 {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 18px;
+}
+
+#header > header > div > h6:hover {
+  border-radius: 4px;
   border: 1px solid white;
   border-radius: 4px;
-  padding: 15px;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 18px;
+
 }
 
 #header > header > form > .title {
@@ -58,12 +70,22 @@ button {
   font-size: 10px;
 }
 
-#header > header > form > .boton {
-  display: inline-block; /*quiero pasar la etiqueta h6 junto al botón y no se puede aún*/
+#header > header > form > .envolvente-boton {
+  overflow: hidden;
+}
+
+#header > header > form > .envolvente-boton > .button {
+  float: left; /*quiero pasar la etiqueta h6 junto al botón y no se puede aún*/
+}
+
+#header > header > form > .envolvente-boton > h6 {
+  margin-top: 45px;
+  padding-left: 15px;
+  float: left; /*quiero pasar la etiqueta h6 junto al botón y no se puede aún*/
 }
 
 #ride {
-  background-color: #622484;
+  background: -webkit-linear-gradient(#691b84, #2d1e67);
   color: white;
   height: 450px;
 }
@@ -99,6 +121,7 @@ button {
   background-color: white;
   float: left;
   margin-left: 50px;
+
 }
 
 #video-left > h6 {
@@ -130,7 +153,7 @@ button {
   background-color: #333447;
   color: white;
   display: inline-block;
-  height: 500px;
+  height: 420px;
 }
 
 #footer > div {
@@ -162,8 +185,17 @@ button {
 
 #social {
   color: white;
-  padding-top: 200px;
+  padding-top: 80px;
   text-align: center;
+}
+
+#social > div {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 15px;
+  margin-left: 70px;
+  margin-bottom: 15px;
 }
 
 #social > hr {
@@ -172,17 +204,11 @@ button {
   width: 800px;
 }
 
-.wrapper {
-  overflow: hidden;
-}
-
-.button {
-  border-radius: 5px;
-}
 
 .clear {
   clear: both;
 }
+
 
 .contenedor { /*definiendo el ancho de mi página*/
   margin: 0 auto;
@@ -203,4 +229,8 @@ button {
 
 .style-form > .title {
   color: purple;
+}
+
+.overflow {
+  overflow: hidden;
 }

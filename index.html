@@ -6,22 +6,24 @@
   <head>
     <meta charset="utf-8">
     <title>Lyft</title>
-    <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat" rel="stylesheet">
 
   </head>
 
   <body>
-    <div class="contenedor"> <!--Aplicando un contender general dentro del body para que todo se ajuste a este contenedor--> 
+    <div class="contenedor"> <!--Aplicando un contender general dentro del body para que todo se ajuste a este contenedor-->
 
     <section id="header" class="font-montserrat clear">
       <header>
         <img src="assets\images\logo-white.png" alt="logo-white">
-        <h6>Drive</h6>
-        <h6>Explore</h6>
-        <h6>Help</h6>
-        <h6>Login</h6>
+        <div>
+          <h6>Drive</h6>
+          <h6>Explore</h6>
+          <h6>Help</h6>
+          <h6>Login</h6>
+        </div>
         <form action="" method="" class="style-form clear">
           <div class="title">
             <h1>TURN MILES</h1>
@@ -29,12 +31,12 @@
             <h6>SIGN UP TO DRIVE WITH LYFT</h6>
           </div>
           <div>
-           <label for="text">Phone Number</label>
-           <input type="number" id="phone" />
+            <label for="phone"></label>
+         <input type="text" id="phone" placeholder="Phone Number" />
            <hr>
          </div>
 
-         <div class="boton">
+         <div class="envolvente-boton">
            <div class="button">
              <button type="submit">Became a driver</button>
            </div>
@@ -42,7 +44,7 @@
          </div>
          <p>Already applied? Check the status of your apllication here</p>
          <p>Earn money for inviting friends to drive. Learn more.</p>
-       </form>
+        </form>
       </header>
     </section>
 
@@ -69,7 +71,7 @@
 
      </section>
 
-   <section  class="font-montserrat wrapper">
+   <section  class="font-montserrat wrapper overflow">
      <div id="video-left">
        <h6>WATCH</h6>
        <h1>AMPLIFY YOUR RIDE</h1>
@@ -84,7 +86,7 @@
      </div>
    </section>
 
-   <section class="clear font-montserrat wrapper">
+   <section class="clear font-montserrat wrapper overflow">
      <div id="video-right">
        <h6>WATCH</h6>
        <h1>JUNE</h1>
@@ -100,7 +102,7 @@
      </div>
    </section>
 
-   <section class="font-montserrat wrapper">
+   <section class="font-montserrat wrapper overflow">
      <div id="video-left">
        <h6>WATCH</h6>
        <h1>A GOOD THING GOING</h1>
@@ -146,7 +148,9 @@
      </div>
 
      <article id="social" class="clear">
-       <div><span class="facebook"</span></div>
+       <div><span class="icon-facebook"</span></div>
+       <div><span class="icon-instagram"</span></div>
+       <div><span class="icon-twitter"</span></div>
        <hr>
        <p>&#169; 2017 Lyft, Inc.TermsPrivacy</p>
      </article>
